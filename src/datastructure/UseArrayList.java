@@ -1,6 +1,7 @@
 package datastructure;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class UseArrayList {
 
@@ -52,10 +53,19 @@ public class UseArrayList {
 		// using while loop
 		System.out.println("Using while loop below output is displayed in the console");
 		int j=0;
-		while (j<=al.size()){
+		while (j<=al.size()-1){
 			System.out.println(al.get(j));
 			j++;
 		}
+
+		// using while loop with iterator
+		System.out.println("using while loop with iterator below output displayed in the console");
+		Iterator ite=al.iterator();
+		while (ite.hasNext()){
+		Object	element=ite.next();
+			System.out.println(element);
+		}
+
 
 
 	}

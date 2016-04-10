@@ -1,6 +1,6 @@
 package oop.design;
 
-public class EmployeeInfo{
+public class EmployeeInfo extends AbsEmployee implements Employee{
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -34,7 +34,11 @@ public class EmployeeInfo{
     public EmployeeInfo(String name, int employeeId){
 		
 	}
-	
+
+	public EmployeeInfo() {
+
+	}
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
@@ -58,5 +62,10 @@ public class EmployeeInfo{
 	public static int calculateEmployePension(){
 		int total=0;
 		return total;
+	}
+
+	@Override
+	public void assignDepartment() {
+
 	}
 }

@@ -1,5 +1,6 @@
 package datastructure;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class UseLinkedList {
@@ -58,10 +59,21 @@ public class UseLinkedList {
 		System.out.println("Below are the output of while loop");
 		int k=0;
 
-		while (k<=ll.size()){
+		while (k<=ll.size()-1){
 			System.out.println(ll.get(k));
 			k=k+1;
 		}
+
+
+		// using while loop with iterator
+		System.out.println("using while loop with iterator below output displayed in the console");
+		Iterator ite=ll.iterator();
+		while (ite.hasNext()){
+			Object element=ite.next();
+			System.out.println(element);
+		}
+
+
 
 
 	}

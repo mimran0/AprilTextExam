@@ -12,10 +12,9 @@ public class CnnEmployee {
 	 * 
 	 **/
 	public static void main(String[] args) {
-		
-		
-		
-		
+
+		EmployeeInfo info = new EmployeeInfo();
+		info.employeeId();
 		
 		
 		
